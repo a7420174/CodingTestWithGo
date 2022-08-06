@@ -44,8 +44,8 @@ func DFS(graph *[9][]int, v int, visited *[9]bool){
 	visited[v] = true
 	fmt.Printf("%v ", v)
 	for _, i := range graph[v] {
-	if !visited[i] {
-	  DFS(graph, i, visited)
-	}
+		if !visited[i] {
+		  DFS(graph, i, visited)
+		}
   }
 }
